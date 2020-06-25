@@ -106,6 +106,16 @@ func (vv *VectorisedView) CapLength(length int) {
 // If the buffer argument is large enough to contain all the Views of this VectorisedView,
 // the method will avoid allocations and use the buffer to store the Views of the clone.
 func (vv VectorisedView) Clone(buffer []View) VectorisedView {
+	// for idx := range buffer[:cap(buffer)] {
+	// 	buffer[idx] = nil
+	// }
+	// buffer = buffer[:0]
+	// for _, view := range vv.views {
+	// 	newView := make([]byte, len(view))
+	// 	copy(newView, view)
+	// 	buffer = append(buffer, newView)
+	// }
+	// return VectorisedView{views: buffer, size: vv.size}
 	return VectorisedView{views: append(buffer[:0], vv.views...), size: vv.size}
 }
 

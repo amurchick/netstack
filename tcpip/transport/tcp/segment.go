@@ -112,6 +112,10 @@ func (s *segment) flagsAreSet(flags uint8) bool {
 
 func (s *segment) decRef() {
 	if atomic.AddInt32(&s.refCnt, -1) == 0 {
+		views := s.data.Views()
+		for idx := range views {
+			views[idx] = nil
+		}
 		s.route.Release()
 	}
 }
