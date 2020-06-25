@@ -18,9 +18,9 @@ import (
 	"container/heap"
 	"time"
 
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/header"
-	"github.com/google/netstack/tcpip/seqnum"
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/header"
+	"github.com/amurchick/netstack/tcpip/seqnum"
 )
 
 // receiver holds the state necessary to receive TCP segments and turn them

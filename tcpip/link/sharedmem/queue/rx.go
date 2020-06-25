@@ -20,8 +20,9 @@ import (
 	"encoding/binary"
 	"sync/atomic"
 
-	"github.com/google/netstack/tcpip/link/sharedmem/pipe"
 	"log"
+
+	"github.com/amurchick/netstack/tcpip/link/sharedmem/pipe"
 )
 
 const (

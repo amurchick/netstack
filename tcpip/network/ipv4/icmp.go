@@ -15,10 +15,10 @@
 package ipv4
 
 import (
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/buffer"
-	"github.com/google/netstack/tcpip/header"
-	"github.com/google/netstack/tcpip/stack"
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/buffer"
+	"github.com/amurchick/netstack/tcpip/header"
+	"github.com/amurchick/netstack/tcpip/stack"
 )
 
 // handleControl handles the case when an ICMP packet contains the headers of

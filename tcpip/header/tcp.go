@@ -17,9 +17,9 @@ package header
 import (
 	"encoding/binary"
 
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/seqnum"
 	"github.com/google/btree"
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/seqnum"
 )
 
 // These constants are the offsets of the respective fields in the TCP header.

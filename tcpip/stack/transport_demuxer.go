@@ -20,9 +20,9 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/hash/jenkins"
-	"github.com/google/netstack/tcpip/header"
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/hash/jenkins"
+	"github.com/amurchick/netstack/tcpip/header"
 )
 
 type protocolIDs struct {

@@ -22,7 +22,7 @@ import (
 	"syscall"
 	"unsafe"
 
-	"github.com/google/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip"
 	"golang.org/x/sys/unix"
 )
 

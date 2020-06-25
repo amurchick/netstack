@@ -20,16 +20,16 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/buffer"
-	"github.com/google/netstack/tcpip/header"
-	"github.com/google/netstack/tcpip/link/channel"
-	"github.com/google/netstack/tcpip/link/sniffer"
-	"github.com/google/netstack/tcpip/network/ipv4"
-	"github.com/google/netstack/tcpip/stack"
-	"github.com/google/netstack/tcpip/transport/tcp"
-	"github.com/google/netstack/tcpip/transport/udp"
-	"github.com/google/netstack/waiter"
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/buffer"
+	"github.com/amurchick/netstack/tcpip/header"
+	"github.com/amurchick/netstack/tcpip/link/channel"
+	"github.com/amurchick/netstack/tcpip/link/sniffer"
+	"github.com/amurchick/netstack/tcpip/network/ipv4"
+	"github.com/amurchick/netstack/tcpip/stack"
+	"github.com/amurchick/netstack/tcpip/transport/tcp"
+	"github.com/amurchick/netstack/tcpip/transport/udp"
+	"github.com/amurchick/netstack/waiter"
 )
 
 func TestExcludeBroadcast(t *testing.T) {

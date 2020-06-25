@@ -22,14 +22,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/google/netstack/rand"
-	"github.com/google/netstack/sleep"
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/buffer"
-	"github.com/google/netstack/tcpip/header"
-	"github.com/google/netstack/tcpip/seqnum"
-	"github.com/google/netstack/tcpip/stack"
-	"github.com/google/netstack/waiter"
+	"github.com/amurchick/netstack/rand"
+	"github.com/amurchick/netstack/sleep"
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/buffer"
+	"github.com/amurchick/netstack/tcpip/header"
+	"github.com/amurchick/netstack/tcpip/seqnum"
+	"github.com/amurchick/netstack/tcpip/stack"
+	"github.com/amurchick/netstack/waiter"
 )
 
 const (
@@ -420,6 +420,7 @@ func (e *endpoint) handleListenSegment(ctx *listenContext, s *segment) {
 	// for accepted sockets.
 
 	switch {
+	// case s.flags&header.TCPFlagSyn == header.TCPFlagSyn:
 	case s.flags == header.TCPFlagSyn:
 		opts := parseSynSegmentOptions(s)
 		if incSynRcvdCount() {

@@ -18,11 +18,11 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/buffer"
-	"github.com/google/netstack/tcpip/header"
-	"github.com/google/netstack/tcpip/seqnum"
-	"github.com/google/netstack/tcpip/stack"
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/buffer"
+	"github.com/amurchick/netstack/tcpip/header"
+	"github.com/amurchick/netstack/tcpip/seqnum"
+	"github.com/amurchick/netstack/tcpip/stack"
 )
 
 // segment represents a TCP segment. It holds the payload and parsed TCP segment

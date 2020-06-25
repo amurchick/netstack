@@ -27,12 +27,13 @@ import (
 	"sync/atomic"
 	"syscall"
 
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/buffer"
-	"github.com/google/netstack/tcpip/header"
-	"github.com/google/netstack/tcpip/link/sharedmem/queue"
-	"github.com/google/netstack/tcpip/stack"
 	"log"
+
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/buffer"
+	"github.com/amurchick/netstack/tcpip/header"
+	"github.com/amurchick/netstack/tcpip/link/sharedmem/queue"
+	"github.com/amurchick/netstack/tcpip/stack"
 )
 
 // QueueConfig holds all the file descriptors needed to describe a tx or rx

@@ -29,16 +29,16 @@ import (
 	"strings"
 	"time"
 
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/link/fdbased"
-	"github.com/google/netstack/tcpip/link/rawfile"
-	"github.com/google/netstack/tcpip/link/tun"
-	"github.com/google/netstack/tcpip/network/arp"
-	"github.com/google/netstack/tcpip/network/ipv4"
-	"github.com/google/netstack/tcpip/network/ipv6"
-	"github.com/google/netstack/tcpip/stack"
-	"github.com/google/netstack/tcpip/transport/tcp"
-	"github.com/google/netstack/waiter"
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/link/fdbased"
+	"github.com/amurchick/netstack/tcpip/link/rawfile"
+	"github.com/amurchick/netstack/tcpip/link/tun"
+	"github.com/amurchick/netstack/tcpip/network/arp"
+	"github.com/amurchick/netstack/tcpip/network/ipv4"
+	"github.com/amurchick/netstack/tcpip/network/ipv6"
+	"github.com/amurchick/netstack/tcpip/stack"
+	"github.com/amurchick/netstack/tcpip/transport/tcp"
+	"github.com/amurchick/netstack/waiter"
 )
 
 var tap = flag.Bool("tap", false, "use tap istead of tun")

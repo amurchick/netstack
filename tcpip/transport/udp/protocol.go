@@ -21,12 +21,12 @@
 package udp
 
 import (
-	"github.com/google/netstack/tcpip"
-	"github.com/google/netstack/tcpip/buffer"
-	"github.com/google/netstack/tcpip/header"
-	"github.com/google/netstack/tcpip/stack"
-	"github.com/google/netstack/tcpip/transport/raw"
-	"github.com/google/netstack/waiter"
+	"github.com/amurchick/netstack/tcpip"
+	"github.com/amurchick/netstack/tcpip/buffer"
+	"github.com/amurchick/netstack/tcpip/header"
+	"github.com/amurchick/netstack/tcpip/stack"
+	"github.com/amurchick/netstack/tcpip/transport/raw"
+	"github.com/amurchick/netstack/waiter"
 )
 
 const (

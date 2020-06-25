@@ -39,9 +39,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/google/netstack/tcpip/buffer"
-	"github.com/google/netstack/tcpip/iptables"
-	"github.com/google/netstack/waiter"
+	"github.com/amurchick/netstack/tcpip/buffer"
+	"github.com/amurchick/netstack/tcpip/iptables"
+	"github.com/amurchick/netstack/waiter"
 )
 
 // Error represents an error in the netstack error space. Using a special type

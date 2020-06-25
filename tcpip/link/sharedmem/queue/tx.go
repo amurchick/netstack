@@ -17,8 +17,9 @@ package queue
 import (
 	"encoding/binary"
 
-	"github.com/google/netstack/tcpip/link/sharedmem/pipe"
 	"log"
+
+	"github.com/amurchick/netstack/tcpip/link/sharedmem/pipe"
 )
 
 const (

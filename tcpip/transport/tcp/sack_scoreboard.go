@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/amurchick/netstack/tcpip/header"
+	"github.com/amurchick/netstack/tcpip/seqnum"
 	"github.com/google/btree"
-	"github.com/google/netstack/tcpip/header"
-	"github.com/google/netstack/tcpip/seqnum"
 )
 
 const (
